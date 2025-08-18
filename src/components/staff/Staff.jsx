@@ -5,9 +5,9 @@ const Staff = () => {
     <>
       <div className="staff py-5">
         <div className="container-fluid px-2">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="card" style={{ width: "18rem" }}>
+          <div className="row ">
+            <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
+              <div className="card m-auto" style={{ width: "18rem" }}>
                 <div className="overflow-hidden cardtopwrapper">
                   <img src="staff-2.jpg" className="card-img-top" alt="staff" />
                 </div>
@@ -18,8 +18,8 @@ const Staff = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="card" style={{ width: "18rem" }}>
+            <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
+              <div className="card m-auto" style={{ width: "18rem" }}>
                 <div className="overflow-hidden cardtopwrapper">
                   <img src="staff-1.jpg" className="card-img-top" alt="staff" />
                 </div>
@@ -30,8 +30,8 @@ const Staff = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="card" style={{ width: "18rem" }}>
+            <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
+              <div className="card m-auto" style={{ width: "18rem" }}>
                 <div className="overflow-hidden cardtopwrapper">
                   <img src="staff-2.jpg" className="card-img-top" alt="staff" />
                 </div>
@@ -42,8 +42,8 @@ const Staff = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6 col-sm-12">
-              <div className="card" style={{ width: "18rem" }}>
+            <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
+              <div className="card m-auto" style={{ width: "18rem" }}>
                 <div className="overflow-hidden cardtopwrapper">
                   <img src="staff-4.jpg" className="card-img-top" alt="staff" />
                 </div>

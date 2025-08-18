@@ -76,22 +76,22 @@ const Aboutus = () => {
                         <span className="check">
                           <FaCheck className="checkicon" />
                         </span>
-                        Get Free Consultation 
+                        Get Free Consultation
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div className="d-flex px-4 mt-3" data-wow-delay="0.5s" >
-                                <div class="about-user me-3">
-                                    <img src="/user.png" className='w-100' alt="user" />
-                                </div>
-                                <div class="about-author-description">
-                                    <h5 class="text-black m-0 p-0">Robert L. Robinson</h5>
-                                    <span className='text-black-50'>CEO &amp; Founder</span>
-                                </div> 
-                            </div>
+              <div className="d-flex px-4 mt-3" data-wow-delay="0.5s">
+                <div className="about-user me-3">
+                  <img src="/user.png" className="w-100" alt="user" />
+                </div>
+                <div className="about-author-description">
+                  <h5 className="text-black m-0 p-0">Robert L. Robinson</h5>
+                  <span className="text-black-50">CEO &amp; Founder</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
