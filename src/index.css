@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+*::selection{
+    background-color: #1F8F6A;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+:root{
+    --maincolor: #E5C466;
+    --secondary-color: #1F8F6A
+}
+
+/* Start Langing */
+.topgreenarea{
+    background-color:#1F8F6A ;
+    width: 100%;
+
+}
+
+.greenleft li{
+ padding: .4rem 1rem .1rem;
+ font-weight: 500;
+ position: relative;
+}
+
+.greenleft li::before{
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: var(--maincolor);
+}
+
+a{
+    text-decoration:none;
+    color:var(--secondary-color)
+}
+
+.greenright li {
+    padding: 0;
+    margin: .4rem 1rem .1rem;
+    color: white;
+    font-size: 1.2rem;
+    transition: .6s;
+}
+
+.greenright li:hover{
+    color: var(--maincolor);
+    transform: translateY(2px);
+    
+}
+
+.landingcontent{
+    background-image: url(/Landingimage.jpg);
+    background-attachment: fixed;
+    height: 125dvh;
+    height: 125vh;
+
+
+
+}
+
+.logowrpp{
+    background-color: white;
+}
+
+.logowrpp{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+}
+.layer{
+    background-color: rgba(0,0 ,0,.6);
+}
+
+.bookstay{
+    background-color: #E5C466;
+    transition: .4s all;
+}
+
+.bookstay .rightarrow{
+    transition: .4s all;
+    font-size: 1.2rem;
+}
+
+.bookstay:hover{
+    background-color: white;
+}
+
+.bookstay:hover .rightarrow{
+    transform: rotate(44deg);
+
+}
+
+.searchwrapper{
+    padding: 1.2rem;
+    color: white;
+    background-color: rgba(255, 255, 255 ,.3);
+    transition: .4s;
+}
+
+.searchwrapper:hover{
+    background-color: var(--maincolor);
+    color: black;
+    cursor: pointer;
+}
+
+.checkIndate{
+    background-color: rgba(72, 119, 99 ,.9);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    left: 5%;
+    top: 14%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Langing */
+
+
+
+/* Start AboutUs */
+
+.aboutus{
+    padding: 12rem 0;
+    background-color: #E8EFEB;
+}
+
+.circleimage{
+    position: absolute;
+    top:40%; left: 80%;
+    background-color: white;
+    border-radius: 50%;
+    padding: .7rem;
+    animation: wordspinner 15s linear   infinite ;
+
+
+}
+
+.aboutusleftimg{
+    position: relative;
+}
+
+.aboutusleftimg::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -20px;
+ 
+}
+
+@keyframes wordspinner {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.aboutusleftimg img{
+
+clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 88%, 88% 100%, 0 100%, 0% 80%, 0% 20%);
+}
+
+.specialoffersheader span ,
+.roomtypeheader span,
+.aboutusrightcontent span{
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+}
+
+.roomtypeheader h1,
+.aboutusrightcontent h1{
+    font-weight: 900;
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+
+}
+.aboutusrightcontent p{
+    font-size: 18px;
+    font-weight: 500;
+}
+ul li{
+    margin: .8rem 0;
+}
+
+
+.checkicon{
+    color: var(--secondary-color);
+    margin: 0  .5rem;
+    font-size: 10px;
+}
+
+.about-user img{
+    border-radius: 50%;
+}
+.about-user{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+@media (max-width:992px) {
+    .aboutus{
+    padding: 30rem 0;
+}
+}
+
+/* End AboutUs */
+
+
+
+.roomtype{
+    background-color: #E8EFEB;
+
+}
+
+
+.swipicon{
+    transform: translateY(-2px);
+    color:var(--secondary-color)
+}
+.readmore{
+    cursor:pointer;
+    position:relative;
+    transition:10s all 
+
+}
+
+.readmore::before{
+    content:"";
+    position : absolute;
+left:15%;
+    bottom:0;
+    background-color:var(--secondary-color);
+    width:0;
+    height:1.5px;
+    transition:1s all 
+
+
+}
+
+
+.readmore:hover::before{
+
+    content:"";
+    
+    width:60%;
+    height:1.5px;
+    background-color:var(--secondary-color)
+
+
+
+}
+/* servic */
+
+.cardtopwrapper img,
+.offerwrapper .dance,
+.scalrotate img{
+    transition: 1.3s all;
+}
+
+.cardtopwrapper:hover img,
+.offerwrapper:hover .dance,
+.scalrotate:hover img{
+    transform: scale(1.1) rotate(-5deg);
+} 
+
+
+
+
+
+.servicelayer{
+    background-color: rgba(31, 143, 106 , .6);
+}
+
+.heii{
+    height: 20rem;
+}
+
+.endcontent span{
+    color: #1F8F6A;
+}
+
+/* servic */
+
+
+
+/* video area */
+.videoplay{
+    background-image: url(/v1.jpg);
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.play-btn {
+  position: relative;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: visible; 
+}
+
+.play-icon {
+  font-size: 28px;
+  color: #333;
+  margin-left: 4px;
+}
+
+.play-btn::before,
+.play-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.play-btn::before {
+  animation: pulse 1.5s infinite;
+}
+
+.play-btn::after {
+  animation: pulse 1.5s infinite 0.75s; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* video area */
+
+
+/* food */
+
+
+    .foodh1 {
+        letter-spacing: .2rem;
+        font-weight: 900;
+
+    }
+
+
+    .fallenphoto{
+        transform: translateY(5rem);
+    }
+
+
+.userscard{
+    top: 70%;
+    left: 25%;
+}
+
+
+
+.usersanimate{
+    animation: upanddown 2s linear infinite alternate-reverse;
+}
+
+@keyframes upanddown {
+    from{
+        transform: translateY(0rem);
+    }
+
+     to{
+        transform: translateY(1rem);
+    }
+
+
+
+}
+
+
+/* food */
+
+/* offers */
+    .specialoffers{
+        padding: 10rem 0;
+        background-color: #E8EFEB;
+    }
+
+
+    .offercont{
+        color: white;
+    }
+
+
+
+.offerwrapper:hover .off{
+    transition: .5s all;
+
+}
+
+.offerwrapper:hover .off{
+
+    background-color: white;
+    color: black;
+}
+
+
+/* offers */
+
+/* testmonials */
+
+
+
+.friendswrapper{
+    border: 3px solid white;
+    top: 50%;
+    left: 70%;
+    width: 15rem;
+    animation: friendsMove 3s linear infinite alternate-reverse ;
+}
+
+@keyframes friendsMove {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10px);
+
+    }
+}
+
+
+.carousel-item{
+    background-color: #E9F0EC !important;
+    border-radius: 10px;
+    padding: 5rem;
+}
+.carousel-item img{
+    width: 3rem;
+    border-radius: 50%;
+}
+/* testmonials */
+
+
+/* staff */
+    .staff{
+        background-color: #1F8F6A;
+    }
+
+    .staff .card-text{
+        position: relative;
+    }
+    .staff .card-text::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        left: -6px;
+        top: 45%;
+        background-color: #1F8F6A;
+    }
+
+    .cardtopwrapper{
+        position: relative;
+    }
+
+    .cardtopwrapper::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        /* bottom: 0; */
+        height: 100%;
+        transition: .4s all;
+        background-color: rgba(255, 255, 255,.5);
+        z-index: 100;
+        transform: translateY(0%);
+
+
+
+    }
+
+      .cardtopwrapper:hover::before{
+
+        transform: translateY(100%);
+
+
+      }
+
+/* staff */
+
+
+      /* stickers */
+
+
+
+      .logo-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.logo-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.6s ease;
+}
+
+.logo-img.bw {
+  z-index: 2;
+}
+
+.logo-img.color {
+  opacity: 0;
+  z-index: 1;
+}
+
+.logo-wrapper:hover .logo-img.bw {
+  filter: blur(4px);
+  opacity: 0;
+  transform: translateY(-30px); /* تطلع لفوق */
+}
+
+.logo-wrapper:hover .logo-img.color {
+  opacity: 1;
+}
+
+      /* stickers */
+
+    
+        
+
+/* showup */
+
+
+   .showuplayer {
+  background-color: rgba(31, 143, 106, 0.5);
+  position: absolute;
+  inset: 0; /* نفس effect بتاع top/right/bottom/left 0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.showup{
+    padding: 8rem 0 0 0;
+}
+
+.showf {
+  background-image: var(--photonum);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.showf:hover .showuplayer {
+  opacity: 1;
+}
+
+
+
+/* showup */
+
+
+
+
+
