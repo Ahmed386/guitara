@@ -1,11 +1,23 @@
-import React from 'react'
-import { RxArrowTopRight } from "react-icons/rx";
 
+
+import React, { useEffect } from "react";
+import { RxArrowTopRight } from "react-icons/rx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Specialoffers = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, 
+      once: false,    
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <>
-      <div className="specialoffers ">
+      <div className="specialoffers">
+        {/* Header */}
         <div className="text-center mb-5 specialoffersheader">
           <span className="fw-bold px-3 py-1 rounded bg-white">
             Special Offers
@@ -15,9 +27,13 @@ const Specialoffers = () => {
           </h1>
         </div>
 
+        {/* Offers */}
         <div className="container-fluid px-3">
-          <div className="row">
-            <div className=" col-md-6 col-sm-12 offerwrapper ">
+          <div className="row g-4">
+            <div
+              className="col-md-6 col-sm-12 offerwrapper"
+              data-aos="flip-left"
+            >
               <div className="position-relative dance">
                 <img src="/view1.png" className="w-100 rounded-4" alt="" />
                 <div className="layer start-0 end-0 bottom-0 top-0 position-absolute rounded-4 justify-content-center align-items-center d-flex">
@@ -33,7 +49,7 @@ const Specialoffers = () => {
                       type="submit"
                     >
                       Check Now
-                      <span className="ps-1 py-1 ">
+                      <span className="ps-1 py-1">
                         <RxArrowTopRight className="rightarrow" />
                       </span>
                     </button>
@@ -41,7 +57,12 @@ const Specialoffers = () => {
                 </div>
               </div>
             </div>
-            <div className=" col-md-6 col-sm-12 offerwrapper ">
+
+            {/* Second Card */}
+            <div
+              className="col-md-6 col-sm-12 offerwrapper"
+              data-aos="flip-right"
+            >
               <div className="position-relative dance">
                 <img src="/view2.png" className="w-100 rounded-4" alt="" />
                 <div className="layer start-0 end-0 bottom-0 top-0 position-absolute rounded-4 justify-content-center align-items-center d-flex">
@@ -57,19 +78,19 @@ const Specialoffers = () => {
                       type="submit"
                     >
                       Check Now
-                      <span className="ps-1 py-1 ">
+                      <span className="ps-1 py-1">
                         <RxArrowTopRight className="rightarrow" />
                       </span>
                     </button>
                   </div>
                 </div>
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default Specialoffers
+export default Specialoffers;

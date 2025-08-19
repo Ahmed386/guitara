@@ -1,29 +1,42 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Aboutus = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+  }, []);
+
   return (
     <>
-      <div className="aboutus ">
+      <div className="aboutus">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-lg-5 col-sm-12">
+            <div
+              className="col-lg-5 col-sm-12"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <div className="aboutusleftimg position-relative">
                 <img src="/hotelhall.jpg" className="w-100 rounded-4" alt="" />
-
                 <div className="circleimage text-center">
                   <img src="/wordspinner.png" alt="" />
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-6 col-sm-12">
-              <div className="aboutusrightcontent  py-5">
+            <div
+              className="col-lg-6 col-sm-12"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <div className="aboutusrightcontent py-5">
                 <span className="fw-bold px-3 py-1 rounded bg-white">
                   About Fixyland
                 </span>
                 <h1>World Class Luxury Hotel and Resort Near City</h1>
-                <p className="mt-3 text-black-50  lh-2">
+                <p className="mt-3 text-black-50 lh-2">
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
                   form, by injected humour, or randomised words which don't look
@@ -31,8 +44,12 @@ const Aboutus = () => {
                 </p>
               </div>
 
-              <div className="row ">
-                <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div className="row">
+                <div
+                  className="col-lg-6"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
                   <div className="about-list">
                     <ul className="check-list">
                       <li>
@@ -57,7 +74,11 @@ const Aboutus = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div
+                  className="col-lg-6"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
                   <div className="about-list">
                     <ul className="check-list">
                       <li>
@@ -83,7 +104,11 @@ const Aboutus = () => {
                 </div>
               </div>
 
-              <div className="d-flex px-4 mt-3" data-wow-delay="0.5s">
+              <div
+                className="d-flex px-4 mt-3"
+                data-aos="fade-up"
+                data-aos-delay="700"
+              >
                 <div className="about-user me-3">
                   <img src="/user.png" className="w-100" alt="user" />
                 </div>
@@ -98,6 +123,6 @@ const Aboutus = () => {
       </div>
     </>
   );
-}
+};
 
-export default Aboutus
+export default Aboutus;

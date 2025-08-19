@@ -1,13 +1,25 @@
-import React from 'react'
 import { GiCycling } from "react-icons/gi"; 
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hotelservices = () => {
+
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        once: false, 
+        easing: "ease-out",
+        offset: 120,
+      });
+    }, []);
   return (
     <>
       <div className="hotelservices py-5">
         <div className="container-fluid py-5">
           <div className="row">
-            <div className="col-lg-6 col-sm-12">
+            <div className="col-lg-6 col-sm-12" data-aos="fade-down">
               <div className="serviceleft">
                 <div className="roomtypeheader  lh-lg">
                   <span className="fw-bold px-3 py-1 rounded bg-white shadow mb-5">
@@ -29,9 +41,13 @@ const Hotelservices = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-sm-12">
+            <div className="col-lg-6 col-sm-12" data-aos="fade-up">
               <div className="row">
-                <div className="col-md-6 col-sm-12 carrier mt-2 ">
+                <div
+                  className="col-md-6 col-sm-12 carrier mt-2 "
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
                   <div className=" position-relative ">
                     <img
                       src="services-1.jpg"
@@ -61,7 +77,11 @@ const Hotelservices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-sm-12 carrier mt-2 ">
+                <div
+                  className="col-md-6 col-sm-12 carrier mt-2 "
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
                   <div className=" position-relative ">
                     <img
                       src="services-2.jpg"
@@ -115,7 +135,11 @@ const Hotelservices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-sm-12 carrier mt-2 ">
+                <div
+                  className="col-md-6 col-sm-12 carrier mt-2 "
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   <div className=" position-relative ">
                     <img
                       src="services-3.jpg"
@@ -165,7 +189,11 @@ const Hotelservices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-sm-12 carrier mt-2 ">
+                <div
+                  className="col-md-6 col-sm-12 carrier mt-2 "
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                >
                   <div className=" position-relative ">
                     <img
                       src="services-4.jpg"
